@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!----browser에게 html임을 알려줌!---->
 
-<html lnag="kr">
+<html lang="kr">
   <head>
     <!--head tag is for configure setting. invisible-->
     <title>The Coding Time</title>
@@ -17,13 +17,12 @@
     <!-- inline CSS-->
     <style>
       body {
+        height: 1000vh;
         margin: 20px;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
+      }
+      div {
+        height: 150px;
+        color: black;
       }
       .btn {
         padding: 5px 10px;
@@ -39,17 +38,35 @@
       }
       /* #tomato == id = "tomato"
       .tomato == class = "tomato" */
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100px;
-        height: 100px;
-        color: white;
-        background-color: teal;
-      }
       #second {
         background-color: wheat;
+      }
+      #green {
+        background-color: teal;
+        position: fixed;
+        opacity: 0.4;
+      }
+      #different {
+        background-color: wheat;
+      }
+      .green {
+        background-color: teal;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        right: 0px;
+      }
+      span {
+        background-color: yellowgreen;
+        color: tomato;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      p span {
+        color: white;
       }
     </style>
 
@@ -67,10 +84,9 @@
     <span class="btn teal">hello</span>
     <span class="btn tomato">hello</span>
     <span class="btn teal">hello</span> -->
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
-    <div>3</div>
-    <div>3</div>
+    <div>
+      <span>hello</span>
+      <p>Lomeo and Juliet is shakesphere's art. <span>inside</span></p>
+    </div>
   </body>
 </html>
