@@ -16,14 +16,13 @@ h1{
     top:10px;
 }
 
-.container{
+body > div{
     height:300px;
     width:200px;
     margin:40px;
     background-color: wheat;
     position:relative;
     top:50px;
-    
 }
 
 div > div{
