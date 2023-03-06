@@ -18,56 +18,59 @@
     <style>
       body {
         height: 1000vh;
-        margin: 20px;
+        margin: 50px;
       }
       div {
-        height: 150px;
-        color: black;
-      }
-      .btn {
-        padding: 5px 10px;
-        border-radius: 25px;
-      }
-      .teal {
-        background-color: teal;
-        color: darkblue;
-      }
-      .tomato {
-        background-color: tomato;
-        color: white;
-      }
-      /* #tomato == id = "tomato"
-      .tomato == class = "tomato" */
-      #second {
-        background-color: wheat;
-      }
-      #green {
-        background-color: teal;
-        position: fixed;
-        opacity: 0.4;
-      }
-      #different {
-        background-color: wheat;
-      }
-      .green {
-        background-color: teal;
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        right: 0px;
+        height: 300px;
+        width: 500px;
+        background-color: whitesmoke;
+        /* position: relative; */
       }
       span {
         background-color: yellowgreen;
-        color: tomato;
         padding: 5px;
-        border-radius: 5px;
-      }
-      div > span {
-        text-decoration: underline;
+        border-radius: 10px;
       }
       p span {
+        /*p's all span children is changed*/
         color: white;
       }
+
+      div > span {
+        /*div's direct children span is changed*/
+        text-decoration: underline;
+      }
+
+      p + span {
+        /*p's sibling(immediately next to) span is changed */
+        /*direct brother*/
+        text-decoration: line-through;
+      }
+
+      p ~ span {
+        /*p's sibling(not immediately next to) span is changed */
+        /* non-direct brother */
+        text-decoration-line: overline;
+      }
+
+      input {
+        border: 1px solid wheat;
+      }
+
+      input:optional {
+        border-color: tomato;
+      }
+
+      /*attribute selector*/
+      input[type="password"] {
+        background-color: thistle;
+      }
+
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+      /* #tomato == id = "tomato"
+      .tomato == class = "tomato" */
     </style>
 
     <!-- Seperate CSS file from HTML file,
@@ -78,15 +81,12 @@
 
   <body>
     <!-- body tag is for real contents. visible-->
-    <!-- <span class="btn tomato">hello</span>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
-    <span class="btn teal">hello</span> -->
     <div>
-      <span>hello</span>
-      <p>Lomeo and Juliet is shakesphere's art. <span>inside</span></p>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" placeholder="password" required />
+      </form>
     </div>
   </body>
 </html>
