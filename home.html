@@ -16,6 +16,10 @@
     <!-- Write CSS code in the same HTML file-->
     <!-- inline CSS-->
     <style>
+      :root {
+        --main_color: rgb(98, 0, 255);
+        --default_border: 1px solid var(--main_color);
+      }
       body {
         height: 1000vh;
         margin: 50px;
@@ -31,6 +35,7 @@
         padding: 5px;
         border-radius: 10px;
       }
+
       p span {
         /*p's all span children is changed*/
         color: white;
@@ -71,6 +76,28 @@
       }
       /* #tomato == id = "tomato"
       .tomato == class = "tomato" */
+
+      input:focus {
+        background-color: tomato;
+      }
+      a:visited {
+        color: crimson;
+      }
+      a:hover {
+        color: teal;
+      }
+      a:focus {
+        color: turquoise;
+      }
+
+      p::first-line {
+        font-size: 40px;
+        color: white;
+        background-color: yellowgreen;
+      }
+      p {
+        color: var(--main_color);
+      }
     </style>
 
     <!-- Seperate CSS file from HTML file,
@@ -83,9 +110,15 @@
     <!-- body tag is for real contents. visible-->
     <div>
       <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" placeholder="password" required />
+        <!-- <input type="text" placeholder="First name" />
+        /* <input type="text" placeholder="Last name" />
+        <input type="password" placeholder="password" required /> -->
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+          distinctio ut consequuntur officia pariatur nihil similique, veniam
+          voluptatum id ipsum atque ea quam laudantium qui blanditiis, fugit
+          sunt earum autem!
+        </p>
       </form>
     </div>
   </body>
