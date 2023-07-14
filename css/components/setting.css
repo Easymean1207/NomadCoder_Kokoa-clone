@@ -1,4 +1,5 @@
 :root {
   --skyblue: rgb(135, 206, 235, 0.2);
   --yellow: rgb(255, 255, 0, 0.1);
+  --horizontal-margin: 20px;
 }

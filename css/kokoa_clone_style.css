@@ -1,0 +1,17 @@
+/* Components */
+@import 'components/status-bar.css';
+@import 'components/setting.css';
+@import 'components/nav-bar.css';
+@import 'components/screen-header.css';
+@import 'components/user-component.css';
+
+/* Screens */
+@import 'screens/login.css';
+@import 'screens/friends.css';
+
+body {
+  color:#2e363e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+  height: 1000vh;
+}
