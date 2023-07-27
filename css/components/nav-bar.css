@@ -1,50 +1,47 @@
-.navigation {
+.nav {
   position: fixed;
-  left: 0;
-  right: 0;
   bottom: 0;
-  box-sizing: border-box;
-  background-color: whitesmoke;
-  border-top: 1px solid rgb(169, 169, 169, 0.5);
+  width: 100%;
+  background-color: var(--customized-white);
+  padding: 20px 40px;
+  border-top: 1px solid var(--customized-black);
+  box-sizing: border-box; /*css의 box-size를 고정함 -> padding에 의해 box-size가 늘어나는 일이 없음.*/
 }
 
-.navigation__list {
-  list-style-type: none;
+.nav__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.navigation__link {
+.nav__link {
+  color: darkslateblue;
   position: relative;
-  text-decoration: none;
 }
 
-/* screen-header__icons */
-.screen-header__icons span svg {
-  width: 30px;
-  height: 30px;
-  stroke: black;
+.nav__btn{
+  position:relative;
 }
 
-/* navigation__link icon */
-.navigation__link svg {
-  width: 30px;
-  height: 30px;
-  stroke: black;
-}
-
-.navigation__notification {
-  position: absolute;
-  bottom: 17px;
-  left: 12px;
-}
-
-.navigation__ellipsis-more {
-  display: flex;
-  background-color: tomato;
-  width: 8px;
-  height: 8px;
+.nav__notification {
+  width: 20px;
+  height: 20px;
+  background-color: red;
   border-radius: 50%;
+  text-align: center;
+  font-size:16px;
+  font-weight: 600;
+  color: white;
   position: absolute;
-  left: 25px;
+  left: 20px;
+  bottom: 15px;
+}
+
+.ellipsis__notification{
+  background-color:red;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  position:absolute;
+  bottom:25px;
+  left:30px;
 }

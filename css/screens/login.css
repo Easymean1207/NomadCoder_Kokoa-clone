@@ -1,16 +1,20 @@
 .welcome-header {
+  margin-top: 150px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .welcome-header__title {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .welcome-header__text {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  width: 60%;
   opacity: 0.8;
 }
 
@@ -22,25 +26,26 @@
 
 .login-form input {
   border: none;
+  padding: 15px 0px;
   margin: 5px 0px;
-  padding: 10px 0px;
-  transition: background-color 0.3s ease-in-out;
+  font-size: 16px;
   border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  transition: background-color, border-color 0.25s ease-in-out;
 }
 
-.login-form__email-phone_num:focus,
-.login-form__password:focus {
-  outline: none;
+.login-form input::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+
+.login-form__input:focus {
   background-color: var(--skyblue);
+  border-bottom-color: indianred;
 }
 
-/* .login-form input:focus {
-    outline: none;
-    background-color: var(--skyblue);
-  } */
-
-.login-form__login,
-.login-form__sign_up {
+.login-form__btn {
+  background-color: var(--yellow);
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -52,18 +57,19 @@
     border-radius: 5px;
   } */
 
-.login-form__login:focus,
-.login-form__sign_up:focus {
-  background-color: var(--yellow);
+.login-form__btn:focus {
+  background-color: var(--skyblue);
 }
 
 /* .login-form input:focus[type='submit'] {
-    background-color: var(--yellow);
+    background-color: var(--skyblue);
   } */
 
 .login-form__find {
   text-align: center;
   text-decoration: none;
+  font-size: 14px;
+  margin: 10px 0px;
 }
 
 /* .login-form a {

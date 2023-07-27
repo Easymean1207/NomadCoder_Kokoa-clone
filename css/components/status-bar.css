@@ -1,12 +1,14 @@
 .status-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
 }
 
+/* css hack */
 .status-bar__column {
   width: 33%;
 }
@@ -15,6 +17,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px;
 }
 
 .status-bar__column:nth-child(2) {
@@ -28,6 +34,6 @@
   align-items: center;
 }
 
-.w-5 {
+.status-bar__column .fa-battery-three-quarters {
   margin: 0px 5px;
 }
