@@ -23,24 +23,12 @@
 }
 
 .nav__notification {
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50%;
-  text-align: center;
-  font-size:16px;
-  font-weight: 600;
-  color: white;
   position: absolute;
   left: 20px;
   bottom: 15px;
 }
 
 .ellipsis__notification{
-  background-color:red;
-  width:5px;
-  height:5px;
-  border-radius:50%;
   position:absolute;
   bottom:25px;
   left:30px;
