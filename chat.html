@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/kokoaClone_style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat with jimin - kokoaClone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <!-- Wifi Icon -->
+        <i class="fas fa-wifi"></i>
+      </div>
+
+      <div class="status-bar__column">
+        <span>18:56</span>
+      </div>
+
+      <div class="status-bar__column">
+        <span>78%</span>
+        <!-- Battery Icon -->
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <!-- Lightning Icon -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
+      </div>
+
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Lee jimin</h1>
+      </div>
+
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        <span>Monday, July 31, 2023</span>
+      </div>
+
+      <div class="message-row">
+        <img src="https://avatars.githubusercontent.com/u/117882085?v=4" alt="Can't load image" />
+        <div class="message-row__content">
+          <span class="message__author">Lee jimin</span>
+          <div class="message__info">
+            <span class="message__bubble">hello!</span>
+            <span class="message__time">22:30</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--opponent">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hey! what's going on?</span>
+            <span class="message__time">22:32</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="https://avatars.githubusercontent.com/u/117882085?v=4" alt="Can't load image" />
+        <div class="message-row__content">
+          <span class="message__author">Lee jimin</span>
+          <div class="message__info">
+            <span class="message__bubble">How about kokoa-clone coding challenge?</span>
+            <span class="message__time">22:37</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--opponent">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">It's pretty interesting!</span>
+            <span class="message__time">22:40</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fas fa-plus-square fa-lg"></i>
+      </div>
+
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message...." />
+        <i class="far fa-smile fa-lg"></i>
+        <button><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </form>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  </body>
+</html>
